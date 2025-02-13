@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>명함 OCR 스캐너</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.0.2/tesseract.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>📇 명함 OCR 스캐너</h2>
+        <input type="file" id="imageInput" accept="image/*">
+        <br>
+        <img id="preview" style="display:none;">
+        <div class="result">
+            <h3>📌 추출된 정보</h3>
+            <p><strong>이메일:</strong> <span id="email">-</span></p>
+            <p><strong>전화번호:</strong> <span id="phone">-</span></p>
+            <p><strong>회사명:</strong> <span id="company">-</span></p>
+        </div>
+
+        <script src="businessCard.js"></script>
+
+    </body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+input {
+    margin: 10px 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+</style>

@@ -14,7 +14,14 @@
         <div class="preview-container">
             <img id="preview" style="display:none;">
         </div>
-        <div class="result">
+
+        <!-- 로딩 스피너 추가 -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>데이터를 불러오는 중...</p>
+        </div>
+
+        <div id="result" class="result">
             <h3>📌 추출된 정보</h3>
             <p><strong>이름:</strong> <span id="name">-</span></p>
             <p><strong>회사명:</strong> <span id="company">-</span></p>
@@ -26,6 +33,7 @@
             <p><strong>이메일:</strong> <span id="email">-</span></p>
             <p><strong>홈페이지:</strong> <span id="homepage">-</span></p>
         </div>
+
         <span class="copyright">ⓒ 찬찬잉</span>
         <script src="businessCard.js"></script>
     </body>

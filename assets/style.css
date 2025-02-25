@@ -59,3 +59,11 @@ img#preview {
 .result strong {
     color: #555;
 }
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+}

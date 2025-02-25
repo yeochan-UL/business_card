@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>명함 OCR 스캐너 - Clova OCR</title>
+        <link rel="icon" href="assets/img/fav.ico">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <h2>📇 명함 OCR 스캐너 (Clova OCR)</h2>
+        <input type="file" id="imageInput" accept="image/*">
+        <br>
+        <div class="preview-container">
+            <img id="preview" style="display:none;">
+        </div>
+        <div class="result">
+            <h3>📌 추출된 정보</h3>
+            <p><strong>이름:</strong> <span id="name">-</span></p>
+            <p><strong>회사명:</strong> <span id="company">-</span></p>
+            <p><strong>부서:</strong> <span id="department">-</span></p>
+            <p><strong>주소:</strong> <span id="address">-</span></p>
+            <p><strong>직위:</strong> <span id="position">-</span></p>
+            <p><strong>모바일:</strong> <span id="mobile">-</span></p>
+            <p><strong>전화번호:</strong> <span id="tel">-</span></p>
+            <p><strong>이메일:</strong> <span id="email">-</span></p>
+            <p><strong>홈페이지:</strong> <span id="homepage">-</span></p>
+        </div>
+        <span>ⓒ 찬찬잉</span>
+        <script src="businessCard.js"></script>
+    </body>
+</html>
